@@ -9,19 +9,19 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'echo \'Build\''
+        sh 'echo "Build"'
       }
     }
 
     stage('Test') {
       steps {
-        sh 'echo \'Test\''
+        sh 'echo "Test"'
       }
     }
 
     stage('Deploy') {
       steps {
-        sh 'echo \'Deploy\''
+        sh 'echo "Deploy"'
       }
     }
 
