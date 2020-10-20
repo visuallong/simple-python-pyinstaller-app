@@ -1,10 +1,10 @@
 pipeline {
-  agent none
+  agent any
   stages {
     stage('Initialize') {
       steps {
         echo 'This is mini pipeline.'
-        sh 'python -v'
+        sh 'python -V'
       }
     }
 
@@ -26,5 +26,8 @@ pipeline {
       }
     }
 
+  }
+  environment {
+    python = '/var/lib/'
   }
 }
