@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'This is mini pipeline.'
         sh 'python -V'
-        sh '''apt-get install python3.7
+        sh '''sudo apt-get install python3.7
 python3 -V'''
       }
     }
