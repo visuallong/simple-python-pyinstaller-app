@@ -4,6 +4,7 @@ pipeline {
     stage('Initialize') {
       steps {
         echo 'This is mini pipeline.'
+        sh 'python -v'
       }
     }
 
